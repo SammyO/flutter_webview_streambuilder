@@ -1,16 +1,9 @@
 # webview_streambuilder_issue
 
-A new Flutter application.
+Example app that demonstrates Flutte WebView and StreamBuilder not working together correctly, as specified in https://github.com/flutter/flutter/issues/49640#issuecomment-579684559.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Steps to reproduce:
+1. Open app
+2. Click "Next"
+3. In logs, observe new HTML from stream being received
+4. Observe WebView contents not changing ("Page 1" stays displayed", rather than "Page 2", "Page 3", etc.)
